@@ -1,5 +1,5 @@
 {% set name = "madoka" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/madoka-{{ version }}.tar.gz
-  sha256: e258baa84fc0a3764365993b8bf5e1b065383a6ca8c9f862fb3e3e709843fae7
+  sha256: 23594b177a56c015050a47df2e00d86bc499acf365f8d608ee7b04b898ed0008
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
